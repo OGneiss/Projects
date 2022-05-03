@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey FF</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Final Fantasy XIV Survey</h1>
+    <p id="description" class="description text-center">
+      "Man shall no longer bear wings to carry him to the heavens. Henceforth, he shall walk."
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Character's Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your character name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email<span class="clue">(optional)</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+   
+    
+     <div class="form-group">
+      <p>Would you recommend Final Fantasy XIV to a non-mmorpg or Final Fantasy player?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="absolutely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Absolutely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+    
+    <div class="form-group">
+      <p>Which Data Center do you play on?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current data center</option>
+        <option value="elemental">Elemental</option>
+        <option value="gaia">Gaia</option>
+        <option value="mana">Mana</option>
+        <option value="aether">Aether</option>
+        <option value="primal">Primal</option>
+        <option value="crystal">Crystal</option>
+        <option value="chaos">Chaos</option>
+        <option value="light">Light</option>
+        <option value="materia">Materia</option>
+      </select>
+    </div>
+
+ <div class="form-group">
+      <p>What is your character's race?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current race</option>
+        <option value="maleviera">Male Viera</option>
+        <option value="femaleviera">Female Viera</option>
+        <option value="maleelezen">Male Elezen</option>
+        <option value="femaleelezen">Female Elezen</option>
+        <option value="maleroegadyn">Male Roegadyn</option>
+        <option value="femaleroegadyn">Female Roegadyn</option>
+        <option value="hrothgar">Hrothgar</option>
+        <option value="malehyur">Male Hyur</option>
+        <option value="femalehyur">Female Hyur</option>
+        <option value="malelalafell">Male Lalafell</option>
+        <option value="femalelalafell">Female Lalafell</option>
+        <option value="maleaura">Male Au Ra</option>
+        <option value="femaleaura">Female Au Ra</option>
+        <option value="malemmiqote">Male Miqo'te</option>
+        <option value="femalemiqote">Female Miqo'te</option> 
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Favorite Expansion?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select favorite expansion</option>
+        <option value="arealmreborn">A Realm Reborn</option>
+        <option value="heavensward">Heavensward</option>
+        <option value="stormblood">Stormblood</option>
+        <option value="shadowbringers">Shadowbringers</option>
+        <option value="endwalker">Endwalker</option>
+      </select>
+    </div>
+
+<div class="form-group">
+      <p>What is your play frequency?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select play frequency</option>
+        <option value="everyday">Everyday</option>
+        <option value="threetofive">3-5 days a week</option>
+        <option value="fewdays">A few days a week</option>
+        <option value="sporadically">Sporadically throughout the month</option>
+        <option value="enough">Enough to get through content then stop playing until next patch</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Favorite housing district?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select housing district</option>
+        <option value="mist">Mist</option>
+        <option value="lavenderbeds">Lavender Beds</option>
+        <option value="thegoblet">The Goblet</option>
+        <option value="shirogane">Shirogane</option>
+        <option value="empyreum">Empyreum</option>
+      </select>
+    </div>
+    
+ <div class="form-group">
+      <label id="number-label" for="number"
+        >How many retainers do you have?<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="retainers"
+        id="number"
+        min="0"
+        max="9"
+        class="form-control"
+        placeholder="Retainers"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Favorite Dungeon?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Favorite Trial?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Favorite mount?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Favorite minion?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Favorite zone?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Favorite story character?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <p>
+        What type of content do you like to partake in?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="savage"
+          type="checkbox"
+          class="input-checkbox"
+        />Savage Raiding</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="ultimate"
+          type="checkbox"
+          class="input-checkbox"
+        />Ultimate Raiding</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="pvp"
+          type="checkbox"
+          class="input-checkbox"
+        />PVP</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="roleplaying"
+          type="checkbox"
+          class="input-checkbox"
+        />Roleplaying</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="decorating"
+          type="checkbox"
+          class="input-checkbox"
+        />House Decorating</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="deepdungeon"
+          type="checkbox"
+          class="input-checkbox"
+        />Deep Dungeon</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="goldsaucer"
+          type="checkbox"
+          class="input-checkbox"
+        />Gold Saucer</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="glamouring"
+          type="checkbox"
+          class="input-checkbox"
+        />Glamouring</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="mountfarming"
+          type="checkbox"
+          class="input-checkbox"
+        />Mount Farming</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="crafting"
+          type="checkbox"
+          class="input-checkbox"
+        />Crafting</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gathering"
+          type="checkbox"
+          class="input-checkbox"
+        />Gathering</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="treasuremaps"
+          type="checkbox"
+          class="input-checkbox"
+        />Treasure Maps</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="dungeons"
+          type="checkbox"
+          class="input-checkbox"
+        />Dungeons</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hunttrains"
+          type="checkbox"
+          class="input-checkbox"
+        />Hunt Trains</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="foray"
+          type="checkbox"
+          class="input-checkbox"
+        />Adventure Foray (Eureka, Bozja, etc)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gpose"
+          type="checkbox"
+          class="input-checkbox"
+        />Gpose</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bard"
+          type="checkbox"
+          class="input-checkbox"
+        />Bard Performance</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="roulettes"
+          type="checkbox"
+          class="input-checkbox"
+        />Roulettes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bluemage"
+          type="checkbox"
+          class="input-checkbox"
+        />Blue Mage</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="chatting"
+          type="checkbox"
+          class="input-checkbox"
+        />Chatting with friends and other players</label
+      >
+    </div>
+    
+    <div class="form-group">
+      <p>What type of content would you like to see improved on or expanded, and how so?</p>
+      <textarea
+        id="comments"
+        class="input-textarea2"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
